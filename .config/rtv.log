@@ -1,0 +1,149 @@
+2021-10-25 13:04:57,288:INFO:__main__.py:179:rtv version: rtv 1.27.0
+rtv module path: /usr/lib/python3.9/site-packages/rtv/__main__.py
+python version: 3.9.7 (default, Oct 10 2021, 15:13:22)  [GCC 11.1.0]
+python executable: /sbin/python
+praw version: packaged, commit 1656ec224e57
+locale, encoding: en_US.UTF-8, UTF-8
+Environment Variables
+  BROWSER         : 
+  DISPLAY         : :0
+  EDITOR          : 
+  LANG            : en_US.UTF-8
+  PAGER           : less
+  RTV_BROWSER     : 
+  RTV_EDITOR      : 
+  RTV_PAGER       : 
+  RTV_URLVIEWER   : 
+  TERM            : xterm-kitty
+  VISUAL          : 
+  XDG_CONFIG_HOME : 
+  XDG_DATA_HOME   : 
+
+2021-10-25 13:04:57,462:DEBUG:connectionpool.py:971:Starting new HTTPS connection (1): api.reddit.com:443
+2021-10-25 13:04:59,912:DEBUG:connectionpool.py:452:https://api.reddit.com:443 "GET /.json?limit=1024 HTTP/1.1" 200 194533
+2021-10-25 13:05:00,408:DEBUG:content.py:1098:Rate limit: 2.0 used, 298.0 remaining, 302 reset
+2021-10-25 13:05:03,572:ERROR:__main__.py:261:[Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/rtv/__main__.py", line 255, in main
+    page = page.loop()
+  File "/usr/lib/python3.9/site-packages/rtv/page.py", line 94, in loop
+    self.controller.trigger(ch)
+  File "/usr/lib/python3.9/site-packages/rtv/objects.py", line 604, in trigger
+    return func(self.instance, *args, **kwargs)
+  File "/usr/lib/python3.9/site-packages/rtv/page.py", line 319, in login
+    self.oauth.authorize()
+  File "/usr/lib/python3.9/site-packages/rtv/oauth.py", line 182, in authorize
+    self.server = OAuthHTTPServer(address, OAuthHandler)
+  File "/usr/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+2021-10-25 13:05:11,530:INFO:__main__.py:179:rtv version: rtv 1.27.0
+rtv module path: /usr/lib/python3.9/site-packages/rtv/__main__.py
+python version: 3.9.7 (default, Oct 10 2021, 15:13:22)  [GCC 11.1.0]
+python executable: /sbin/python
+praw version: packaged, commit 1656ec224e57
+locale, encoding: en_US.UTF-8, UTF-8
+Environment Variables
+  BROWSER         : 
+  DISPLAY         : :0
+  EDITOR          : 
+  LANG            : en_US.UTF-8
+  PAGER           : less
+  RTV_BROWSER     : 
+  RTV_EDITOR      : 
+  RTV_PAGER       : 
+  RTV_URLVIEWER   : 
+  TERM            : xterm-kitty
+  VISUAL          : 
+  XDG_CONFIG_HOME : 
+  XDG_DATA_HOME   : 
+
+2021-10-25 13:05:11,564:DEBUG:connectionpool.py:971:Starting new HTTPS connection (1): api.reddit.com:443
+2021-10-25 13:05:14,078:DEBUG:connectionpool.py:452:https://api.reddit.com:443 "GET /.json?limit=1024 HTTP/1.1" 200 194493
+2021-10-25 13:05:14,571:DEBUG:content.py:1098:Rate limit: 3.0 used, 297.0 remaining, 288 reset
+2021-10-25 13:05:19,009:DEBUG:connectionpool.py:971:Starting new HTTPS connection (1): www.reddit.com:443
+2021-10-25 13:05:20,809:DEBUG:connectionpool.py:452:https://www.reddit.com:443 "GET /r/AskReddit/comments/qexisf/what_is_your_best_example_of_buy_it_before_you/.json HTTP/1.1" 200 83142
+2021-10-25 13:05:21,069:DEBUG:content.py:1098:Rate limit: 4.0 used, 296.0 remaining, 281 reset
+2021-10-25 13:05:26,365:ERROR:__main__.py:261:[Errno 98] Address already in use
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/rtv/__main__.py", line 255, in main
+    page = page.loop()
+  File "/usr/lib/python3.9/site-packages/rtv/page.py", line 97, in loop
+    self.handle_selected_page()
+  File "/usr/lib/python3.9/site-packages/rtv/subreddit_page.py", line 43, in handle_selected_page
+    self.selected_page = self.selected_page.loop()
+  File "/usr/lib/python3.9/site-packages/rtv/page.py", line 94, in loop
+    self.controller.trigger(ch)
+  File "/usr/lib/python3.9/site-packages/rtv/objects.py", line 604, in trigger
+    return func(self.instance, *args, **kwargs)
+  File "/usr/lib/python3.9/site-packages/rtv/page.py", line 319, in login
+    self.oauth.authorize()
+  File "/usr/lib/python3.9/site-packages/rtv/oauth.py", line 182, in authorize
+    self.server = OAuthHTTPServer(address, OAuthHandler)
+  File "/usr/lib/python3.9/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.9/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.9/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+OSError: [Errno 98] Address already in use
+2021-10-25 13:05:43,388:INFO:__main__.py:179:rtv version: rtv 1.27.0
+rtv module path: /usr/lib/python3.9/site-packages/rtv/__main__.py
+python version: 3.9.7 (default, Oct 10 2021, 15:13:22)  [GCC 11.1.0]
+python executable: /sbin/python
+praw version: packaged, commit 1656ec224e57
+locale, encoding: en_US.UTF-8, UTF-8
+Environment Variables
+  BROWSER         : 
+  DISPLAY         : :0
+  EDITOR          : 
+  LANG            : en_US.UTF-8
+  PAGER           : less
+  RTV_BROWSER     : 
+  RTV_EDITOR      : 
+  RTV_PAGER       : 
+  RTV_URLVIEWER   : 
+  TERM            : xterm-kitty
+  VISUAL          : 
+  XDG_CONFIG_HOME : 
+  XDG_DATA_HOME   : 
+
+2021-10-25 13:05:43,429:DEBUG:connectionpool.py:971:Starting new HTTPS connection (1): api.reddit.com:443
+2021-10-25 13:05:46,077:DEBUG:connectionpool.py:452:https://api.reddit.com:443 "GET /.json?limit=1024 HTTP/1.1" 200 194836
+2021-10-25 13:05:46,558:DEBUG:content.py:1098:Rate limit: 5.0 used, 295.0 remaining, 256 reset
+2021-10-25 13:05:55,064:DEBUG:oauth.py:88:"GET /?state=396a8c06eb28487e88f322e50ddf3b70&code=BYVtZGM8VmYcn2BkEVNzJJTUVFkVfQ HTTP/1.1" 200 -
+2021-10-25 13:05:55,444:DEBUG:connectionpool.py:452:https://api.reddit.com:443 "POST /api/v1/access_token/ HTTP/1.1" 401 41
+2021-10-25 13:05:55,452:INFO:objects.py:245:Loader caught: OAuthException - Basic realm="reddit" on url https://api.reddit.com/api/v1/access_token/
+2021-10-25 13:06:03,005:DEBUG:connectionpool.py:452:https://api.reddit.com:443 "GET /.json?limit=1024 HTTP/1.1" 200 194774
+2021-10-25 13:06:03,510:DEBUG:content.py:1098:Rate limit: 7.0 used, 293.0 remaining, 239 reset
+2021-10-25 13:07:34,403:INFO:__main__.py:179:rtv version: rtv 1.27.0
+rtv module path: /usr/lib/python3.9/site-packages/rtv/__main__.py
+python version: 3.9.7 (default, Oct 10 2021, 15:13:22)  [GCC 11.1.0]
+python executable: /sbin/python
+praw version: packaged, commit 1656ec224e57
+locale, encoding: en_US.UTF-8, UTF-8
+Environment Variables
+  BROWSER         : 
+  DISPLAY         : :0
+  EDITOR          : 
+  LANG            : en_US.UTF-8
+  PAGER           : less
+  RTV_BROWSER     : 
+  RTV_EDITOR      : 
+  RTV_PAGER       : 
+  RTV_URLVIEWER   : 
+  TERM            : xterm-kitty
+  VISUAL          : 
+  XDG_CONFIG_HOME : 
+  XDG_DATA_HOME   : 
+
+2021-10-25 13:07:34,448:DEBUG:connectionpool.py:971:Starting new HTTPS connection (1): api.reddit.com:443
+2021-10-25 13:07:36,680:DEBUG:connectionpool.py:452:https://api.reddit.com:443 "GET /.json?limit=1024 HTTP/1.1" 200 197152
+2021-10-25 13:07:37,160:DEBUG:content.py:1098:Rate limit: 8.0 used, 292.0 remaining, 145 reset
+2021-10-25 13:07:43,915:DEBUG:oauth.py:88:"GET /?state=fb9771423912430b9981bd830172e6f0&code=SvKqzYUV1a0hEKybPDfwn1A1pHkqAQ HTTP/1.1" 200 -
+2021-10-25 13:07:44,710:DEBUG:connectionpool.py:452:https://api.reddit.com:443 "POST /api/v1/access_token/ HTTP/1.1" 401 41
+2021-10-25 13:07:45,150:INFO:objects.py:245:Loader caught: OAuthException - Basic realm="reddit" on url https://api.reddit.com/api/v1/access_token/

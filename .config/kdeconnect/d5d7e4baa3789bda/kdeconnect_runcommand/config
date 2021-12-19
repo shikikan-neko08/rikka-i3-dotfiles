@@ -1,0 +1,2 @@
+[General]
+commands="@ByteArray({\"_555fc8bb_3f34_4244_8cb1_d1aad91beb98_\":{\"command\":\"./.config/scripts/i3lock.sh\",\"name\":\"Lock Screen\"},\"_651b118d_23e1_4b68_91da_34c1cf8e24a0_\":{\"command\":\"./.config/polybar/launch.sh\",\"name\":\"Polybar \"},\"_d1da9945_720e_4e85_a6c3_603bc506cc3c_\":{\"command\":\"killall i3lock\",\"name\":\"Unlock Screen\"},\"_e5d4c5eb_81f7_48d9_bce8_14d0c45ad55a_\":{\"command\":\"systemctl poweroff\",\"name\":\"Shutdown\"},\"_eb990943_0e47_4bd0_a245_35e097257d8a_\":{\"command\":\"systemctl reboot\",\"name\":\"Reboot\"}})"
